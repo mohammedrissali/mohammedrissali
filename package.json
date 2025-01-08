@@ -1,1 +1,15 @@
-
+{
+  "name": "blm-website",
+  "version": "1.0.0",
+  "description": "Bark Language Model Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve src"
+  },
+  "dependencies": {
+    "prismjs": "^1.29.0"
+  },
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

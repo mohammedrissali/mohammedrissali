@@ -1,0 +1,199 @@
+/* Coming Soon Section Styles */
+.coming-soon-section {
+    background: linear-gradient(135deg, #f6f8ff 0%, #f0f4ff 100%);
+    padding: 6rem 2rem;
+    margin: 4rem 0;
+}
+
+.coming-soon-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.coming-soon-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Agent Avatar Animation */
+.agent-avatar {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.dog-ears {
+    position: absolute;
+    top: 20%;
+    width: 60px;
+    height: 80px;
+    background: #8B4513;
+    border-radius: 20px;
+}
+
+.dog-ears:before {
+    content: '';
+    position: absolute;
+    right: -240px;
+    width: 60px;
+    height: 80px;
+    background: #8B4513;
+    border-radius: 20px;
+}
+
+.dog-face {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 150px;
+    height: 150px;
+    background: #D2691E;
+    border-radius: 50%;
+}
+
+.dog-nose {
+    position: absolute;
+    bottom: 35%;
+    left: 45%;
+    width: 30px;
+    height: 20px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.thinking-bubble {
+    position: absolute;
+    top: 20%;
+    right: -100px;
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.typing-dots {
+    display: inline-block;
+    animation: typing 1.5s infinite;
+}
+
+@keyframes typing {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60%, 100% { content: '...'; }
+}
+
+.coming-soon-text {
+    padding: 2rem;
+}
+
+.coming-soon-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.feature-list {
+    margin: 2rem 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.signup-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.email-input {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.email-input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.signup-button {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.signup-button:hover:not(:disabled) {
+    background: var(--primary-dark);
+}
+
+.signup-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.success-message {
+    text-align: center;
+    padding: 2rem;
+    background: #f0fdf4;
+    border-radius: 16px;
+    margin-top: 2rem;
+}
+
+.success-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .coming-soon-content {
+        grid-template-columns: 1fr;
+    }
+
+    .agent-avatar {
+        width: 200px;
+        height: 200px;
+    }
+
+    .signup-form {
+        flex-direction: column;
+    }
+}
